@@ -21,8 +21,8 @@ The key business questions to answer are:
 ---
 
 ## 🔐 Entity Relationship Diagram  
-*![image](https://github.com/user-attachments/assets/fdf473db-a8af-4b96-889e-dff83fc1fcf2)
-*  
+![image](https://github.com/user-attachments/assets/fdf473db-a8af-4b96-889e-dff83fc1fcf2)
+ 
 
 ---
 
