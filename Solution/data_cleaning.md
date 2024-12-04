@@ -66,6 +66,7 @@ SELECT
 INTO clean_weekly_sales
 FROM data_mart.weekly_sales;
 
+```
 ---
 
 ## Output Sample
