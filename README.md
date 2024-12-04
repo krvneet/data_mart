@@ -29,7 +29,7 @@ The key business questions to answer are:
 ## ❓ Case Study Questions  
 
 ### A. Data Cleansing Steps  
-[View my solution HERE](#)  
+[View my solution HERE](https://github.com/krvneet/data_mart/blob/main/Solution/data_cleaning.md)  
 
 Perform the following operations to generate a new table `clean_weekly_sales`:  
 - Convert `week_date` to a `DATE` format.  
