@@ -66,6 +66,7 @@ SELECT
 INTO clean_weekly_sales
 FROM data_mart.weekly_sales;
 
+---
 
 ## Output Sample
 
@@ -76,3 +77,5 @@ FROM data_mart.weekly_sales;
 | 8/31/2020     | 36              | 8                | 2020               | USA        | Retail       | null        | Guest             | unknown        | unknown         | 529151           | 16509610    | 31.20              |
 | 8/31/2020     | 36              | 8                | 2020               | EUROPE     | Retail       | C1          | New               | Young Adults   | Couples         | 4517             | 141942      | 31.42              |
 | 8/31/2020     | 36              | 8                | 2020               | AFRICA     | Retail       | C2          | New               | Middle Aged    | Couples         | 58046            | 1758388     | 30.29              |
+
+---
