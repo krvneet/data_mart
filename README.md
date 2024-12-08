@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Case Study #5 - Data Mart  
 
 📕 **Table of Contents**  
