@@ -217,7 +217,7 @@ ORDER BY calendar_year, platform;
 ```
 calendar_year	platform 	avg_transaction_row	 avg_grp_transactions
 2018	        Retail	        43	                 37
-2018	        Shopify	        188	               192
+2018	        Shopify	        188	                192
 2019	        Retail     	42	                 37
 2019	        Shopify    	178	                183
 2020	        Retail     	41	                 37
