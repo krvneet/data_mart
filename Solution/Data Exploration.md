@@ -73,6 +73,7 @@ GROUP BY region, month_number
 ORDER BY region, month_number;
 ```
 
+<<<<<<< HEAD
 **Output (March only)**:
 | region         | month_number | total_sales |
 |----------------|--------------|-------------|
@@ -80,6 +81,19 @@ ORDER BY region, month_number;
 | ASIA           | 3            | 529770793   |
 | ...            | ...          | ...         |
 | USA            | 3            | 225353043   |
+=======
+**Output (March):**  
+```
+region	      month_number	 total_sales
+AFRICA	        3	          567767480
+ASIA	          3	          529770793
+CANADA	        3	          144634329
+EUROPE 	       3	          35337093
+OCEANIA	       3	          783282888
+SOUTH AMERICA	 3	          71023109
+USA	           3	          225353043
+```
+>>>>>>> e7e35b7269a782fbf106a6d2fb87dece4c7ebe19
 
 ---
 
@@ -92,11 +106,20 @@ FROM clean_weekly_sales
 GROUP BY platform;
 ```
 
+<<<<<<< HEAD
 **Output**:
 | platform | total_count_transactions |
 |----------|---------------------------|
 | Shopify  | 8549                      |
 | Retail   | 8568                      |
+=======
+**Output:**  
+```
+platform	total_count_transactions
+Shopify	 8549
+Retail	  8568
+```
+>>>>>>> e7e35b7269a782fbf106a6d2fb87dece4c7ebe19
 
 ---
 
@@ -120,11 +143,25 @@ GROUP BY calendar_year, month_number
 ORDER BY calendar_year, month_number;
 ```
 
+<<<<<<< HEAD
 **Output (2018 only)**:
 | calendar_year | month_number | shopify | retail |
 |---------------|--------------|---------|--------|
 | 2018          | 3            | 2.08    | 97.92  |
 | ...           | ...          | ...     | ...    |
+=======
+**Output (2018):**  
+```
+calendar_year	month_number	 shopify	retail
+2018	       3	       2.08	       97.92
+2018	       4	       2.07	       97.93
+2018	       5	       2.27	       97.73
+2018	       6	       2.24	       97.76
+2018	       7	       2.25	       97.75
+2018	       8	       2.29	       97.71
+2018	       9	       2.32	       97.68
+```
+>>>>>>> e7e35b7269a782fbf106a6d2fb87dece4c7ebe19
 
 ---
 
@@ -147,12 +184,22 @@ FROM year_sales
 GROUP BY calendar_year;
 ```
 
+<<<<<<< HEAD
 **Output**:
 | calendar_year | couples | families | unknown |
 |---------------|---------|----------|---------|
 | 2018          | 26.38   | 31.99    | 41.63   |
 | 2019          | 27.28   | 32.47    | 40.25   |
 | 2020          | 28.72   | 32.73    | 38.55   |
+=======
+**Output:**  
+```
+calendar_year	couples	   families	     unknown
+2018	         26.38	       31.99	       41.63
+2019	         27.28	       32.47	       40.25
+2020	         28.72	       32.73	       38.55
+```
+>>>>>>> e7e35b7269a782fbf106a6d2fb87dece4c7ebe19
 
 ---
 
@@ -168,12 +215,26 @@ GROUP BY age_band, demographic
 ORDER BY contributor DESC;
 ```
 
+<<<<<<< HEAD
 **Output**:
 | age_band    | demographic | sum_sales   | contributor |
 |-------------|-------------|-------------|-------------|
 | unknown     | unknown     | 16067285533 | 40.52       |
 | Retirees    | Families    | 6634686916  | 16.73       |
 | ...         | ...         | ...         | ...         |
+=======
+**Output:**  
+```
+age_band	     demographic	 sum	        contributor
+unknown	        unknown	  16067285533	 40.52
+Retirees       	Families 	6634686916  	16.73
+Retirees       	Couples	  6370580014  	16.07
+Middle Aged	    Families 	4354091554  	10.98
+Young Adults	   Couples	  2602922797  	6.56
+Middle Aged	    Couples	  1854160330  	4.68
+Young Adults   	Families 	1770889293  	4.47
+```
+>>>>>>> e7e35b7269a782fbf106a6d2fb87dece4c7ebe19
 
 ---
 
@@ -189,6 +250,7 @@ GROUP BY calendar_year, platform
 ORDER BY calendar_year, platform;
 ```
 
+<<<<<<< HEAD
 **Output**:
 | calendar_year | platform | avg_transaction_row | avg_grp_transactions |
 |---------------|----------|---------------------|-----------------------|
@@ -199,3 +261,18 @@ ORDER BY calendar_year, platform;
 ---
 
 **Note**: Replace `...` with actual results where applicable to complete the dataset representation.
+=======
+**Output:**  
+```
+ calendar_year	platform	avg_transaction_row	avg_grp_transactions
+2018          	Retail	  43	                 37
+2018	          Shopify	 188	                192
+2019	          Retail	  42	                 37
+2019	          Shopify	 178	                183
+2020          	Retail	  41	                 37
+2020          	Shopify	 175                	179
+
+
+
+```
+>>>>>>> e7e35b7269a782fbf106a6d2fb87dece4c7ebe19
