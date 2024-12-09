@@ -92,8 +92,8 @@ We compared sales metrics for 4 and 12 weeks before and after `2020-06-15` with 
 ```sql
 WITH sale_changes AS (
  SELECT 
-    SUM(CASE WHEN week_number BETWEEN 13 AND 24 THEN sales END) AS before_change,
-    SUM(CASE WHEN week_number BETWEEN 25 AND 36 THEN sales END) AS after_change
+    SUM(CASE WHEN week_number BETWEEN 21 AND 24 THEN sales END) AS before_change,
+    SUM(CASE WHEN week_number BETWEEN 25 AND 28 THEN sales END) AS after_change
  FROM clean_weekly_sales    
  GROUP BY calendar_year
 )
@@ -102,6 +102,8 @@ SELECT
    ROUND(((after_change - before_change) / before_change) * 100, 2) AS pcnt_change
 FROM sale_changes;
 ```
+
+
 
 **Output:**
 
@@ -117,8 +119,8 @@ FROM sale_changes;
 ```sql
 WITH sale_changes AS (
  SELECT 
-    SUM(CASE WHEN week_number BETWEEN 21 AND 24 THEN sales END) AS before_change,
-    SUM(CASE WHEN week_number BETWEEN 25 AND 28 THEN sales END) AS after_change
+    SUM(CASE WHEN week_number BETWEEN 13 AND 24 THEN sales END) AS before_change,
+    SUM(CASE WHEN week_number BETWEEN 25 AND 36 THEN sales END) AS after_change
  FROM clean_weekly_sales    
  GROUP BY calendar_year
 )
