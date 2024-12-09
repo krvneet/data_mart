@@ -98,6 +98,7 @@ WITH sale_changes AS (
  GROUP BY calendar_year
 )
 SELECT
+   calendar_year,
    before_change, after_change,
    ROUND(((after_change - before_change) / before_change) * 100, 2) AS pcnt_change
 FROM sale_changes;
@@ -125,6 +126,7 @@ WITH sale_changes AS (
  GROUP BY calendar_year
 )
 SELECT
+   calendar_year,
    before_change, after_change,
    ROUND(((after_change - before_change) / before_change) * 100, 2) AS pcnt_change
 FROM sale_changes;
