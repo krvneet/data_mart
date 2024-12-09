@@ -5,8 +5,28 @@ This analysis inspects the impact of an important event, focusing on sales metri
 
 ## Questions and Insights
 
-### 1. Total Sales for 4 Weeks Before and After `2020-06-15`
-We calculated the total sales for 4 weeks before and after the change, along with the growth or reduction rate.
+### 1. Total Sales for 4 Weeks Before and After `2020-06-15` and What is the growth or reduction rate in actual values and percentage of sales
+ 
+ firstly, we determine the week_number corresponding to '2020-06-15' to use it as a filter in our analysis.
+
+ ***code:***
+ ```sql
+ SELECT DISTINCT week_number
+FROM clean_weekly_sales
+WHERE week_date = '2020-06-15' 
+  AND calendar_year = '2020';
+```
+
+| week_number |
+|-------------|
+|     25      |
+       
+
+The week_number is 25. I created CTEs: 
+
+sale_changes CTE: Utilize a CASE statement to capture the sales for 4 weeks before and after 2020-06-15 and then calculate the total sales for the specified period.
+
+We calculated the total sales for 4 weeks before and after the change and the growth or reduction rate.
 
 **Code:**
 ```sql
@@ -59,7 +79,7 @@ FROM sale_changes;
 | 7,126,273,147  | 6,973,947,753| -2.14%            |
 
 **Insight:**  
-Sales showed a further decline, with a 2.14% reduction over the 12-week analysis.
+Sales declined further, with a 2.14% reduction over the 12-week analysis.
 
 ---
 
@@ -126,7 +146,7 @@ The percentage changes reveal notable variations across years, with a sharp decl
 - Further investigation and strategy adjustments may be required to address this issue.
 
 **Note:**  
-This analysis provides a foundation for deeper insights into packaging change impacts on sales.
+This analysis provides a foundation for deeper insights into the impact of packaging change on sales.
 
 ---
 
