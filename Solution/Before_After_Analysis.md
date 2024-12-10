@@ -91,12 +91,8 @@ We compared sales metrics for 4 and 12 weeks before and after `2020-06-15` with 
 **Code:**
 ```sql
 WITH sale_changes AS (
-<<<<<<< HEAD
- SELECT
-    calendar_year,
-=======
  SELECT 
->>>>>>> 4e2d33e54cfec2dd27b48102b68fa0b8f6570bcc
+    calendar_year,
     SUM(CASE WHEN week_number BETWEEN 21 AND 24 THEN sales END) AS before_change,
     SUM(CASE WHEN week_number BETWEEN 25 AND 28 THEN sales END) AS after_change
  FROM clean_weekly_sales    
@@ -124,12 +120,8 @@ FROM sale_changes;
 **Code:**
 ```sql
 WITH sale_changes AS (
-<<<<<<< HEAD
- SELECT
-    calendar_year,
-=======
  SELECT 
->>>>>>> 4e2d33e54cfec2dd27b48102b68fa0b8f6570bcc
+    calendar_year,
     SUM(CASE WHEN week_number BETWEEN 13 AND 24 THEN sales END) AS before_change,
     SUM(CASE WHEN week_number BETWEEN 25 AND 36 THEN sales END) AS after_change
  FROM clean_weekly_sales    
